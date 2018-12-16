@@ -11,5 +11,5 @@ while True:
     old=tree[r].value
     #change the brightness of the led with the index of r to a random number
     tree[r].value=(random())
-    #sleep for half the diffrence between the old brightness and new brightness as a positive number
-    sleep(abs(tree[r].value-old)/2)
+    #sleep for half-quarter (selcted randomly) the diffrence between the old brightness and new brightness as a positive number
+    sleep(abs(tree[r].value-old)/randint(2,4))
